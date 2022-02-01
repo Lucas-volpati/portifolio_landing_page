@@ -1,0 +1,30 @@
+/** Header Formatation */
+
+.main-header {
+    width: 100%;
+    background-color: $grey;
+    color: #fff;
+    height: 80px;
+    position: relative;
+
+    .main-header-content {
+        margin: 0 auto;
+        max-width: $width;
+        
+    }
+
+    .arrow-grey {
+        width:0; 
+        border-top:30px solid $grey; 
+        border-left:40px solid transparent; 
+        border-right:40px solid transparent;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        margin: 0 auto 0 auto;
+        z-index: 999;
+
+    
+    }
+}

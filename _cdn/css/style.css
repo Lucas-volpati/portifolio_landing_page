@@ -1,0 +1,62 @@
+/** Reset Project */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/** Header Formatation */
+.main-header {
+  width: 100%;
+  background-color: #535353;
+  color: #fff;
+  height: 80px;
+  position: relative;
+}
+.main-header .main-header-content {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+.main-header .arrow-grey {
+  width: 0;
+  border-top: 30px solid #535353;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto 0 auto;
+  z-index: 999;
+}
+
+/** Body Formatation */
+.main {
+  width: 100%;
+  background-color: #f89b1c;
+  position: relative;
+}
+.main .main-content {
+  max-width: 1300px;
+  padding: 40px 0;
+  border: solid 1px black;
+  margin: 0 auto;
+}
+.main .arrow-orange {
+  width: 0;
+  border-top: 30px solid #f89b1c;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  margin: -1px auto 0 auto;
+  z-index: 999;
+}
+
+/** Footer Formatation */
+
+/*# sourceMappingURL=style.css.map */

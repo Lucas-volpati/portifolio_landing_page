@@ -1,0 +1,27 @@
+/** Body Formatation */
+
+.main {
+    width: 100%;
+    background-color: $orange;
+    position: relative;
+
+    .main-content {
+        max-width: $width;
+        padding: 40px 0;
+        border: solid 1px black;
+        margin: 0 auto;
+    }
+
+    .arrow-orange {
+        width:0; 
+        border-top:30px solid $orange; 
+        border-left:40px solid transparent; 
+        border-right:40px solid transparent;
+        position: absolute;
+        top: auto;
+        left: 0;
+        right: 0;
+        margin: -1px auto 0 auto;
+        z-index: 999;
+    }
+}

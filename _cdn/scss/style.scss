@@ -1,0 +1,10 @@
+//Config CSS
+@import "config/reset";
+@import "config/variables";
+
+// Import scss body.
+@import "site/header";
+@import "site/body";
+@import "site/footer";
+
+
