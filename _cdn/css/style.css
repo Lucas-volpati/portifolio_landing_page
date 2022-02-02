@@ -7,6 +7,22 @@
   font-family: "Roboto", sans-serif;
 }
 
+.btn {
+  margin-top: 10px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  color: #fff;
+  background-color: #17a2b8;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  background-color: #1ab6cf;
+}
+
 /** Header Formatation */
 .main-header {
   width: 100%;
@@ -18,12 +34,22 @@
 .main-header .main-header-content {
   margin: 0 auto;
   max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header .main-header-content .logo {
+  flex-basis: 50%;
+  margin-top: 4px;
+}
+.main-header .main-header-content .logo img {
+  max-width: 70px;
 }
 .main-header .arrow-grey {
   width: 0;
-  border-top: 30px solid #535353;
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
+  border-top: 20px solid #535353;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
   position: absolute;
   top: 80px;
   left: 0;
@@ -32,28 +58,87 @@
   z-index: 999;
 }
 
-/** Body Formatation */
+/** #Body - Content Formatation */
 .main {
   width: 100%;
   background-color: #f89b1c;
   position: relative;
+  padding-top: 40px;
 }
 .main .main-content {
   max-width: 1300px;
   padding: 40px 0;
-  border: solid 1px black;
   margin: 0 auto;
+  display: flex;
+}
+.main .main-content .content-left {
+  flex-basis: 60%;
+}
+.main .main-content .content-left .content-card h1 {
+  font-size: 2em;
+  color: #fff;
+}
+.main .main-content .content-left .content-card p {
+  padding: 10px 0;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+.main .main-content .content-right {
+  max-width: 40%;
 }
 .main .arrow-orange {
   width: 0;
-  border-top: 30px solid #f89b1c;
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
+  border-top: 20px solid #f89b1c;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
   position: absolute;
   top: auto;
   left: 0;
   right: 0;
   margin: -1px auto 0 auto;
+  z-index: 999;
+}
+
+/** #Body - Specs Formatation */
+.specs {
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  max-width: 1300px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+.specs .specs-left {
+  max-width: 50%;
+}
+.specs .specs-content {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.specs .specs-content img {
+  max-width: 150px;
+  max-height: 150px;
+  flex-basis: 100%;
+}
+.specs .specs-content .specs-format {
+  padding: 0 20px;
+}
+.specs .specs-content .specs-format h1 {
+  font-size: 1em;
+}
+.specs .arrow-white {
+  width: 0;
+  border-top: 20px solid #fff;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto 0 auto;
   z-index: 999;
 }
 

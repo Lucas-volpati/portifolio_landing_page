@@ -2,6 +2,9 @@
 @import "config/reset";
 @import "config/variables";
 
+//Components
+@import "components/button";
+
 // Import scss body.
 @import "site/header";
 @import "site/body";

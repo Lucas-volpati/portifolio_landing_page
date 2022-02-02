@@ -1,27 +1,100 @@
-/** Body Formatation */
+/** #Body - Content Formatation */
 
 .main {
     width: 100%;
     background-color: $orange;
     position: relative;
+    padding-top: 40px;
 
     .main-content {
         max-width: $width;
         padding: 40px 0;
-        border: solid 1px black;
         margin: 0 auto;
+        display: flex;
+
+        .content-left {
+            flex-basis: 60%;
+
+            .content-card {
+                h1 {
+                    font-size: 2em;
+                    color: #fff;
+                }
+
+                p {
+                    padding: 10px 0;
+                    font-size: 1em;
+                    color: #fff;
+                    font-weight: 300;
+                }
+            }
+            
+        }
+
+        .content-right {
+            max-width: 40%;
+        }
     }
 
     .arrow-orange {
         width:0; 
-        border-top:30px solid $orange; 
-        border-left:40px solid transparent; 
-        border-right:40px solid transparent;
+        border-top:20px solid $orange; 
+        border-left:30px solid transparent; 
+        border-right:30px solid transparent;
         position: absolute;
         top: auto;
         left: 0;
         right: 0;
         margin: -1px auto 0 auto;
+        z-index: 999;
+    }
+}
+
+/** #Body - Specs Formatation */
+
+.specs {
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    max-width: $width;
+    padding-top: 40px;
+    margin: 0 auto;
+
+    .specs-left {
+        max-width: 50%;
+    }
+
+    .specs-content {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+
+        img {
+            max-width: 150px;
+            max-height: 150px;
+            flex-basis: 100%;
+        }
+
+        .specs-format {
+            padding: 0 20px;
+
+            h1 {
+                font-size: 1em;
+            }
+        }
+    }
+
+    .arrow-white {
+        width:0; 
+        border-top:20px solid #fff; 
+        border-left:30px solid transparent; 
+        border-right:30px solid transparent;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto 0 auto;
         z-index: 999;
     }
 }
