@@ -70,6 +70,7 @@
   padding: 40px 0;
   margin: 0 auto;
   display: flex;
+  justify-content: space-around;
 }
 .main .main-content .content-left {
   flex-basis: 60%;
@@ -129,6 +130,12 @@
 .specs .specs-content .specs-format h1 {
   font-size: 1em;
 }
+.specs .specs-right {
+  align-self: flex-end;
+}
+.specs p {
+  font-weight: 300;
+}
 .specs .arrow-white {
   width: 0;
   border-top: 20px solid #fff;
@@ -140,6 +147,68 @@
   right: 0;
   margin: 0 auto 0 auto;
   z-index: 999;
+}
+
+/** Body - Contact */
+.contact {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #26494d;
+  display: flex;
+  flex-direction: column;
+}
+.contact header {
+  margin: 0 auto;
+  display: flex;
+}
+.contact header h1 {
+  font-size: 2em;
+  color: #fff;
+}
+.contact .contact-content {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1em;
+  color: #fff;
+  align-items: center;
+}
+.contact .contact-content .copyright {
+  font-weight: 300;
+}
+.contact .contact-content .contact-info {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-content .contact-info .icon-text {
+  display: flex;
+  margin: 20px 0;
+}
+.contact .contact-content .contact-info .icon-text p {
+  font-weight: 300;
+}
+.contact .contact-content .contact-info .icon-text .description {
+  color: #bbb;
+}
+.contact .contact-content .contact-info ion-icon {
+  margin-right: 10px;
+}
+.contact .contact-content .form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.contact .contact-content .form input, .contact .contact-content .form textarea {
+  padding: 15px;
+  font-size: 1em;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  margin: 10px 0;
 }
 
 /** Footer Formatation */
